@@ -1,32 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dbc996f9-d00f-4e9f-a885-da8483df7e34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AT_GO.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atSerial/at.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atSerial/send_instructions.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec200s/ec200s.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec200s/network_get_cgreg.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec200s/network_get_creg.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec200s/sys_get_ati.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec200s/sys_get_cgsn.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec200s/sys_get_cpin.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ec200s/sys_set_atv.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mode/machine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/ec200s_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_get_cmgf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_get_cmgl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_get_cpms.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_get_cpms_state.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_get_csca.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_set_cmgf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_set_cpms.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_set_qurccfg.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/network_get_cops.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/sys_get_csq.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atSerial/at.go" beforeDir="false" afterPath="$PROJECT_DIR$/atSerial/at.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atSerial/send_instructions.go" beforeDir="false" afterPath="$PROJECT_DIR$/atSerial/send_instructions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec200s/network_get_cgreg.go" beforeDir="false" afterPath="$PROJECT_DIR$/ec200s/network_get_cgreg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec200s/network_get_creg.go" beforeDir="false" afterPath="$PROJECT_DIR$/ec200s/network_get_creg.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec200s/sys_get_ati.go" beforeDir="false" afterPath="$PROJECT_DIR$/ec200s/sys_get_ati.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec200s/sys_get_cgsn.go" beforeDir="false" afterPath="$PROJECT_DIR$/ec200s/sys_get_cgsn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec200s/sys_get_cpin.go" beforeDir="false" afterPath="$PROJECT_DIR$/ec200s/sys_get_cpin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec200s/sys_set_atv.go" beforeDir="false" afterPath="$PROJECT_DIR$/ec200s/sys_set_atv.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Go" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GoLibraries">
@@ -39,13 +80,25 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\Administrator\go\src\AT_GO\ec200s" />
+      <recent name="D:\Users\Administrator\go\src\AT_GO\ec200s\network" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.Test in AT_GO/ec200s (1)">
     <configuration name="go build AT_GO" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="AT_GO" />
       <working_directory value="$PROJECT_DIR$" />
@@ -55,15 +108,75 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test in AT_GO/ec200s (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AT_GO" />
+      <working_directory value="$PROJECT_DIR$/ec200s" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="AT_GO/ec200s" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test in AT_GO/ec200s" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AT_GO" />
+      <working_directory value="$PROJECT_DIR$/ec200s" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="AT_GO/ec200s" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Test$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestNew in AT_GO/ec200s" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AT_GO" />
+      <working_directory value="$PROJECT_DIR$/ec200s" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="AT_GO/ec200s" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestNew$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test in AT_GO/ec200s (1)" />
+        <item itemvalue="Go Test.Test in AT_GO/ec200s" />
+        <item itemvalue="Go Test.TestNew in AT_GO/ec200s" />
         <item itemvalue="Go Build.go build AT_GO" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AT_GO_ONE" />
@@ -71,5 +184,60 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.cn" />
+      </map>
+    </environment>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="975" y="330" key="#xdebugger.evaluate" timestamp="1613911773431">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="975" y="330" key="#xdebugger.evaluate/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613911773431" />
+    <state width="805" height="582" key="DebuggerActiveHint" timestamp="1613911754585">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="805" height="582" key="DebuggerActiveHint/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613911754585" />
+    <state x="1151" y="527" key="EnvironmentVariablesDialog" timestamp="1613908951163">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1151" y="527" key="EnvironmentVariablesDialog/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613908951163" />
+    <state width="2504" height="490" key="GridCell.Tab.0.bottom" timestamp="1613921653613">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2504" height="490" key="GridCell.Tab.0.bottom/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613921653613" />
+    <state width="2504" height="490" key="GridCell.Tab.0.center" timestamp="1613921653612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2504" height="490" key="GridCell.Tab.0.center/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613921653612" />
+    <state width="2504" height="490" key="GridCell.Tab.0.left" timestamp="1613921653612">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2504" height="490" key="GridCell.Tab.0.left/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613921653612" />
+    <state width="2504" height="490" key="GridCell.Tab.0.right" timestamp="1613921653613">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2504" height="490" key="GridCell.Tab.0.right/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613921653613" />
+    <state width="2504" height="468" key="GridCell.Tab.1.bottom" timestamp="1613920260145">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2504" height="468" key="GridCell.Tab.1.bottom/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613920260145" />
+    <state width="2504" height="468" key="GridCell.Tab.1.center" timestamp="1613920260145">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2504" height="468" key="GridCell.Tab.1.center/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613920260145" />
+    <state width="2504" height="468" key="GridCell.Tab.1.left" timestamp="1613920260145">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2504" height="468" key="GridCell.Tab.1.left/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613920260145" />
+    <state width="2504" height="468" key="GridCell.Tab.1.right" timestamp="1613920260145">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2504" height="468" key="GridCell.Tab.1.right/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613920260145" />
+    <state x="649" y="243" key="SettingsEditor" timestamp="1613908952392">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="649" y="243" key="SettingsEditor/-1080.0.1080.1880/0.0.2560.1400@0.0.2560.1400" timestamp="1613908952392" />
   </component>
 </project>
