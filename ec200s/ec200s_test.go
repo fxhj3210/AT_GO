@@ -58,6 +58,14 @@ func Test(t *testing.T) {
 		fmt.Println(string(CREG), Sub)
 	}
 
+	//查询模组是否注册上 NB 网络，0 未注册，MT 当前当前没有搜索或者注册到运营商网络;1 已注册，注册到归属网络;2 未注册;3 注册被拒绝;4 未知错误;5 已注册，注册到漫游网络
+	CEREG, err := machine.NetworkGetCEREG()
+	if err != nil {
+		t.Errorf(err.Error())
+	} else {
+		fmt.Println(string(CEREG), Sub)
+	}
+
 	//查询模组是否注册上GPRS网络，+CGREG:0,1 表示已注册上本地网，+CGREG:0,5表示注册上漫游网。
 	CGREG, err := machine.NetworkGetCGREG()
 	if err != nil {
