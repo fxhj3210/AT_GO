@@ -16,4 +16,11 @@ type AT interface {
 	MsgSetCMGF(string) ([]byte, error)
 	MsgGetCMGL(string) ([]byte, error)
 	NetworkGetCOPS() ([]byte, error)
+	SysGetCIMI() ([]byte, error)
+	SysRestart() ([]byte, error)
+	SysSetCMEE(string) ([]byte, error)
+	SysGetCMEE() ([]byte, error)
+	MsgGetCMGR(string) ([]byte, error)
+	MsgDelCMGD(string, string) ([]byte, error)
+	SysGetCNUM() ([]byte, error)
 }

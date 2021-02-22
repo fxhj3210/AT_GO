@@ -8,7 +8,7 @@ import (
 const Sub = "\n----------------------------"
 
 func Test(t *testing.T) {
-	machine := New("COM15")
+	machine := New("COM12")
 
 	//设置TA响应模式,0时：0,1时：ok
 	ATV, err := machine.SysSetATV("1")
@@ -34,12 +34,44 @@ func Test(t *testing.T) {
 		fmt.Println(string(CGSN), Sub)
 	}
 
+	//查询错误讯息格式,1启用结果代码并使用数值(ERROR:10);2启用结果代码并使用详细值(ERROR:SIM not inserted)
+	GetCMEE, err := machine.SysGetCMEE()
+	if err != nil {
+		t.Errorf(err.Error())
+	} else {
+		fmt.Println(string(GetCMEE), Sub)
+	}
+
+	//设置错误讯息格式,0禁用结果代码;1启用结果代码并使用数值;2启用结果代码并使用详细值
+	SetCMEE, err := machine.SysSetCMEE("2")
+	if err != nil {
+		t.Errorf(err.Error())
+	} else {
+		fmt.Println(string(SetCMEE), Sub)
+	}
+
 	//查询 SIM 卡状态，返回 READY 则表示SIM卡正常
 	CPIN, err := machine.SysGetCPIN()
 	if err != nil {
 		t.Errorf(err.Error())
 	} else {
 		fmt.Println(string(CPIN), Sub)
+	}
+
+	//查询当前SIM卡手机号
+	CNUM, err := machine.SysGetCNUM()
+	if err != nil {
+		t.Errorf(err.Error())
+	} else {
+		fmt.Println(string(CNUM), Sub)
+	}
+
+	//获取国际移动用户识别码
+	CIMI, err := machine.SysGetCIMI()
+	if err != nil {
+		t.Errorf(err.Error())
+	} else {
+		fmt.Println(string(CIMI), Sub)
 	}
 
 	//查询信号强度，第一个值为0-31则正常，99为不正常
@@ -130,13 +162,32 @@ func Test(t *testing.T) {
 		fmt.Println(string(QURCCFG), Sub)
 	}
 
-	//读取短信,("REC UNREAD","REC READ","STO UNSENT","STO SENT","ALL")
+	//读取短信列表,("REC UNREAD","REC READ","STO UNSENT","STO SENT","ALL")
+	//(“REC UNREAD”-未读;“REC READ”-已读;“STO UNSENT”-待发;“STO SENT”-已发;“ALL”-全部)
 	GetCMGL, err := machine.MsgGetCMGL("ALL")
 	if err != nil {
 		t.Errorf(err.Error())
 	} else {
 		fmt.Println(string(GetCMGL), Sub)
 	}
+
+	//读取单条短信
+	GetCMGR, err := machine.MsgGetCMGR("1")
+	if err != nil {
+		t.Errorf(err.Error())
+	} else {
+		fmt.Println(string(GetCMGR), Sub)
+	}
+
+	//删除短信
+	/*
+		DelCMGD, err := machine.MsgDelCMGD("0","")
+		if err != nil {
+			t.Errorf(err.Error())
+		} else {
+			fmt.Println(string(DelCMGD), Sub)
+		}
+	*/
 
 	//获取短信中心号码
 	CSCA, err := machine.MsgGetCSCA()
@@ -145,5 +196,17 @@ func Test(t *testing.T) {
 	} else {
 		fmt.Println(string(CSCA), Sub)
 	}
+
+	/*
+		//重启模块,会断电
+		Restart, err := machine.SysRestart()
+		if err != nil {
+			t.Errorf(err.Error())
+		} else {
+			fmt.Println(string(Restart), Sub)
+		}
+	*/
+
+	//编辑短信
 
 }

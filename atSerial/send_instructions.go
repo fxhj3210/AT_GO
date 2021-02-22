@@ -62,8 +62,14 @@ func SendInstructions(M mode.Machine, Command []byte) (results []byte, err error
 	}
 
 	//输出信息
-	if len(Command)+2 >= len(tmpstr)-len(SUCCATQ)-2 {
-		return []byte(tmpstr)[len(Command)+2 : len(tmpstr)-2], err
+	before := len(Command) + 2
+	after := len(tmpstr) - len(SUCCATQ) - 2
+
+	if before >= after {
+		if after <= 0 {
+			return nil, errors.New(FAILCATQ + ": No Data")
+		}
+		return []byte(tmpstr)[before : after+len(SUCCATQ)], err
 	}
-	return []byte(tmpstr)[len(Command)+2 : len(tmpstr)-len(SUCCATQ)-2], err
+	return []byte(tmpstr)[before:after], err
 }

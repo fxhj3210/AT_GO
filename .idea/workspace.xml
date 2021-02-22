@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbc996f9-d00f-4e9f-a885-da8483df7e34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/ec200s.go" afterDir="false" />
+    <list default="true" id="dbc996f9-d00f-4e9f-a885-da8483df7e34" name="Default Changelist" comment="AT_GO_ONE">
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_create.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_del_cmgd.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/msg_get_cmgr.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/sys_get_cimi.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/sys_get_cmee.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/sys_get_cnum.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/sys_restart.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ec200s/sys_set_cmee.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mode/msg.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mode/pdu.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/serialization/msg.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atSerial/at.go" beforeDir="false" afterPath="$PROJECT_DIR$/atSerial/at.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atSerial/send_instructions.go" beforeDir="false" afterPath="$PROJECT_DIR$/atSerial/send_instructions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec200s/ec200s_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/ec200s/ec200s_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec200s/msg_get_cmgl.go" beforeDir="false" afterPath="$PROJECT_DIR$/ec200s/msg_get_cmgl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ec200s.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +53,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\go\AT_GO" />
+      <recent name="C:\Users\Administrator\go\AT_GO\ec200s" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.Test in AT_GO/ec200s">
     <configuration name="go build AT_GO" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="AT_GO" />
       <working_directory value="$PROJECT_DIR$" />
@@ -49,9 +75,57 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test in AT_GO/ec200s" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AT_GO" />
+      <working_directory value="$PROJECT_DIR$/ec200s" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="AT_GO/ec200s" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSmsSubmitPduGsm7 in AT_GO/ec200s/serialization" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AT_GO" />
+      <working_directory value="$PROJECT_DIR$/ec200s/serialization" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="AT_GO/ec200s/serialization" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestSmsSubmitPduGsm7\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSmsSubmitPduUCS2 in AT_GO/ec200s/serialization" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AT_GO" />
+      <working_directory value="$PROJECT_DIR$/ec200s/serialization" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="AT_GO/ec200s/serialization" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestSmsSubmitPduUCS2\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestSmsSubmitReadFromGsm7 in AT_GO/ec200s/serialization" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="AT_GO" />
+      <working_directory value="$PROJECT_DIR$/ec200s/serialization" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="AT_GO/ec200s/serialization" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestSmsSubmitReadFromGsm7\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test in AT_GO/ec200s" />
         <item itemvalue="Go Build.go build AT_GO" />
+        <item itemvalue="Go Test.TestSmsSubmitPduGsm7 in AT_GO/ec200s/serialization" />
+        <item itemvalue="Go Test.TestSmsSubmitPduUCS2 in AT_GO/ec200s/serialization" />
+        <item itemvalue="Go Test.TestSmsSubmitReadFromGsm7 in AT_GO/ec200s/serialization" />
       </list>
     </recent_temporary>
   </component>
@@ -69,6 +143,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AT_GO_ONE" />
@@ -76,5 +151,10 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.cn" />
+      </map>
+    </environment>
   </component>
 </project>
