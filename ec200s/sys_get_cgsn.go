@@ -5,12 +5,12 @@ import (
 )
 
 //请求产品序列号标识
-func (m ec200s) SysGetCGSN() (CGSN string, err error) {
+func (m ec200s) SysGetCGSN() (results []byte, err error) {
 
-	results, err := atSerial.SendInstructions(m.Machine, []byte("AT+CGSN\r"))
+	results, err = atSerial.SendInstructions(m.Machine, []byte("AT+CGSN\r"))
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 
-	return string(results), err
+	return results, err
 }

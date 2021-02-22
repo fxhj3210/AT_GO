@@ -14,6 +14,7 @@ const FAILCATQ = "ERROR"
 
 func SendInstructions(M mode.Machine, Command []byte) (results []byte, err error) {
 
+	fmt.Println(string(Command))
 	iorwc, err := serial.OpenPort(&serial.Config{
 		Name:        M.ComName,
 		Baud:        M.Baud,

@@ -5,12 +5,12 @@ import (
 )
 
 //显示产品标识信息(显示全部）
-func (m ec200s) SysGetATI() (CGSN string, err error) {
+func (m ec200s) SysGetATI() (results []byte, err error) {
 
-	results, err := atSerial.SendInstructions(m.Machine, []byte("ATI\r"))
+	results, err = atSerial.SendInstructions(m.Machine, []byte("ATI\r"))
 	if err != nil {
-		return "", err
+		return nil, err
 	}
 
-	return string(results), err
+	return results, err
 }
